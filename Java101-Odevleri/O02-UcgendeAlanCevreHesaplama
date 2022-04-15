@@ -1,0 +1,27 @@
+import java.util.Scanner;
+
+public class Ucgenhesaplama {
+    public static void main(String[] args){
+    
+   
+        float kkenar, ukenar, hipotenus;
+
+        Scanner input = new Scanner(System.in);
+        System.out.print("Kısa kenar uzunluğunu giriniz: ");
+        kkenar = input.nextInt();
+        System.out.print("Uzun kenar uzunluğunu giriniz: ");
+        ukenar = input.nextInt();
+        System.out.print("Hipotenüs kenar uzunluğunu giriniz: ");
+        hipotenus = input.nextInt();
+        
+        
+        float uformul = (kkenar + ukenar + hipotenus)/2;
+        float ucgencevre = 2*uformul;
+        System.out.println("Üçgenin çevresi: "+ucgencevre);
+        float hipotenushesaplama = Math.sqrt ((kkenar * kkenar) + (ukenar * ukenar));
+        System.out.println("Üçgenin Hipotenüsü: "+ hipotenushesaplama);
+        float ucgenalan = Math.sqrt(uformul * (ucgencevre - kkenar) * (ucgencevre - ukenar) * (ucgencevre - hipotenus));
+        System.out.println("Üçgenin Alanı: "+ucgenalan);
+
+    }
+}
