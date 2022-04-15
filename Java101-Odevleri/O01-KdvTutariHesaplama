@@ -1,0 +1,27 @@
+import java.util.Scanner;
+
+public class KdvtutariHes {
+    public static void main (String[] args){
+    
+        float fiyat, kdvliFiyat, toplamTutar;
+        Scanner input = new Scanner(System.in);
+        System.out.print("Ücreti Giriniz:  ");
+        tutar = input.nextFloat();
+
+
+        if (fiyat > 0 && fiyat < 1000)
+        {
+            kdvliFiyat = fiyat * 0.18;
+            toplamTutar = fiyat + kdvliFiyat;
+            System.out.println("Ücretiniz Kdv ile birlikte: "+toplamTutar);
+        }
+
+        if (fiyat > 1000)
+        {
+            kdvliFiyat = fiyat * 0.08;
+            toplamTutar = fiyat + kdvliFiyat;
+            System.out.println("Ücretiniz Kdv ile birlikte: " + toplamTutar);
+        }
+
+    }
+}
