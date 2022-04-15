@@ -1,0 +1,28 @@
+import java.util.Scanner;
+
+public class Daire {
+    public static void main(String[] args) {
+        float  alan, cevre, dilimformul;
+        float pi = 3.14;
+        
+        System.out.print("Lütfen YarıÇapı Giriniz. r:  ");
+        Scanner input = new Scanner(System.in);
+        float r = input.nextFloat();
+
+    
+        daireAlan = (pi * r * r);
+        System.out.println("Dairenin Alanı: "+daireAlan);
+        daireCevre = (2 * pi * r);
+        System.out.println("Dairenin Çevresi: "+daireCevre);
+
+
+
+        System.out.print("a merkez açısını giriniz:  ");
+        Scanner input1 = new Scanner(System.in);
+        flaot a = input1.nextDouble();
+
+        daireDilimAlanı = (pi * (r * r)* a)/360;
+        System.out.println("Dilim alanı: "+daireDilimAlanı);
+
+    }
+}
