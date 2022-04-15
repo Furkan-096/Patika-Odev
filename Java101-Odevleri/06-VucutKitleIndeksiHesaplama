@@ -9,9 +9,9 @@ public class App {
         float kg, boy, vucutIndeks;
 
         System.out.println("Lütfen boyunuzu (metre cinsinde) giriniz: ");
-        boy = input.nextDouble();
+        boy = input.nextFloat();
         System.out.println("Lütfen kilonuzu giriniz: ");
-        kg = input.nextDouble();
+        kg = input.nextFloat();
         vucutIndeks = kg /(boy * boy);
         System.out.println("Vücut Kitle İndeksiniz: " + vucutIndeks);
     }
